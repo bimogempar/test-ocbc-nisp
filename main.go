@@ -71,4 +71,5 @@ func saveCSVFile(file io.Reader, fileID string) error {
 func main() {
 	http.HandleFunc("/upload", uploadCSVHandler)
 	http.ListenAndServe(":7000", nil)
+	fmt.Println("running bro")
 }
